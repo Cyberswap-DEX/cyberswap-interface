@@ -1954,9 +1954,9 @@
     "@babel/runtime" "^7.7.2"
     regenerator-runtime "^0.13.3"
 
-"@cyberswap-dex/uniswap-sdk@3.0.4":
+"@levinswap/uniswap-sdk@3.0.4":
   version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@cyberswap-dex/uniswap-sdk/-/uniswap-sdk-3.0.4.tgz#4819bc7360a45726b033a8389fab2c61eb9a1636"
+  resolved "https://registry.yarnpkg.com/@clevinswap/uniswap-sdk/-/uniswap-sdk-3.0.4.tgz#4819bc7360a45726b033a8389fab2c61eb9a1636"
   integrity sha512-9gGgjBAdx7ZU3pPJcdOTIbaYcyuCQXoTF9Sbx3G21bcMGlFFVLg2Y1L8g46PitBrQsTxckX3Z+Fnr9NLsz2QUA==
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
