@@ -1,4 +1,4 @@
-import { Currency, ETHER as xDai, WETH, ChainId, Token } from '@levinswap/uniswap-sdk'
+import { Currency, ETHER as xDai, WETH, ChainId, Token } from '@cyberswap-dex/uniswap-sdk'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 

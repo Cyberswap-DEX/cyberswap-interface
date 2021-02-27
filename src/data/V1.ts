@@ -14,7 +14,7 @@ import {
   Trade,
   TradeType,
   WETH
-} from '@levinswap/uniswap-sdk'
+} from '@cyberswap-dex/uniswap-sdk'
 import { useMemo } from 'react'
 import { useActiveWeb3React } from '../hooks'
 import { useAllTokens } from '../hooks/Tokens'

@@ -1,5 +1,5 @@
 import { isAddress } from '../../utils'
-import { Token } from '@levinswap/uniswap-sdk'
+import { Token } from '@cyberswap-dex/uniswap-sdk'
 
 export function filterTokens(tokens: Token[], search: string): Token[] {
   if (search.length === 0) return tokens

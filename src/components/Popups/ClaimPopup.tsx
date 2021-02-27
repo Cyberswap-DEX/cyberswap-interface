@@ -1,4 +1,4 @@
-import { TokenAmount } from '@levinswap/uniswap-sdk'
+import { TokenAmount } from '@cyberswap-dex/uniswap-sdk'
 import React, { useEffect } from 'react'
 import { X } from 'react-feather'
 import styled, { keyframes } from 'styled-components'

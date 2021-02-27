@@ -1,4 +1,4 @@
-import { JSBI, Token } from '@levinswap/uniswap-sdk'
+import { JSBI, Token } from '@cyberswap-dex/uniswap-sdk'
 import React, { useCallback, useContext, useMemo, useState, useEffect } from 'react'
 import { ThemeContext } from 'styled-components'
 import { AutoColumn } from '../../components/Column'

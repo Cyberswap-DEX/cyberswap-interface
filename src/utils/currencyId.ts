@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@levinswap/uniswap-sdk'
+import { Currency, ETHER, Token } from '@cyberswap-dex/uniswap-sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'ETH'

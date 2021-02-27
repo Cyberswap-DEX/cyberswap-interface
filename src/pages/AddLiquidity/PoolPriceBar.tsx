@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from '@levinswap/uniswap-sdk'
+import { Currency, Percent, Price } from '@cyberswap-dex/uniswap-sdk'
 import React, { useContext } from 'react'
 import { Text } from 'rebass'
 import { ThemeContext } from 'styled-components'

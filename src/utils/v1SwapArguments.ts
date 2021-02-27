@@ -7,7 +7,7 @@ import {
   Trade,
   TradeOptionsDeadline,
   TradeType
-} from '@levinswap/uniswap-sdk'
+} from '@cyberswap-dex/uniswap-sdk'
 import { getTradeVersion } from '../data/V1'
 import { Version } from '../hooks/useToggledVersion'
 

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, Percent } from '@levinswap/uniswap-sdk'
+import { Currency, CurrencyAmount, Fraction, Percent } from '@cyberswap-dex/uniswap-sdk'
 import React from 'react'
 import { Text } from 'rebass'
 import { ButtonPrimary } from '../../components/Button'

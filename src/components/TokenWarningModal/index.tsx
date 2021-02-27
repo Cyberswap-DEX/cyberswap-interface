@@ -1,4 +1,4 @@
-import { Token } from '@levinswap/uniswap-sdk'
+import { Token } from '@cyberswap-dex/uniswap-sdk'
 import { transparentize } from 'polished'
 import React, { useCallback, useMemo, useState } from 'react'
 import styled from 'styled-components'

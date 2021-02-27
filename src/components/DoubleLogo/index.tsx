@@ -1,4 +1,4 @@
-import { Currency } from '@levinswap/uniswap-sdk'
+import { Currency } from '@cyberswap-dex/uniswap-sdk'
 import React from 'react'
 import styled from 'styled-components'
 import CurrencyLogo from '../CurrencyLogo'

@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, WETH, Pair } from '@levinswap/uniswap-sdk'
+import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, WETH, Pair } from '@cyberswap-dex/uniswap-sdk'
 import { useMemo } from 'react'
 import { UNI, USDC } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'

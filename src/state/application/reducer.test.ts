@@ -1,4 +1,4 @@
-import { ChainId } from '@levinswap/uniswap-sdk'
+import { ChainId } from '@cyberswap-dex/uniswap-sdk'
 import { createStore, Store } from 'redux'
 import { addPopup, ApplicationModal, removePopup, setOpenModal, updateBlockNumber } from './actions'
 import reducer, { ApplicationState } from './reducer'

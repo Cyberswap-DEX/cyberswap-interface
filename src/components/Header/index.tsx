@@ -1,4 +1,4 @@
-import { ChainId /*, TokenAmount */ } from '@levinswap/uniswap-sdk'
+import { ChainId /*, TokenAmount */ } from '@cyberswap-dex/uniswap-sdk'
 import React, { useState } from 'react'
 import { Text } from 'rebass'
 import { NavLink } from 'react-router-dom'

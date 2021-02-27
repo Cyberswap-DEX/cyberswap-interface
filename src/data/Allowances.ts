@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from '@levinswap/uniswap-sdk'
+import { Token, TokenAmount } from '@cyberswap-dex/uniswap-sdk'
 import { useMemo } from 'react'
 
 import { useTokenContract } from '../hooks/useContract'

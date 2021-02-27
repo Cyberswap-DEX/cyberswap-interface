@@ -1,4 +1,4 @@
-import { ChainId } from '@levinswap/uniswap-sdk'
+import { ChainId } from '@cyberswap-dex/uniswap-sdk'
 import MULTICALL_ABI from './abi.json'
 
 const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {

@@ -1,9 +1,9 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@levinswap/uniswap-sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from '@cyberswap-dex/uniswap-sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 
 import { injected, walletconnect } from '../connectors'
 
-export const ROUTER_ADDRESS = '0xb18d4f69627F8320619A696202Ad2C430CeF7C53'
+export const ROUTER_ADDRESS = '0x7c1FabC1c916d679464437ACA3015fcf262C1116'
 
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 
