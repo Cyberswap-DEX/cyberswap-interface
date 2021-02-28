@@ -1146,15 +1146,16 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
-"@cyberswap-dex/uniswap-sdk@3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@cyberswap-dex/uniswap-sdk/-/uniswap-sdk-3.0.4.tgz#706802ae77b124faaa4f1aa2e3d1f937ec11c993"
-  integrity sha512-JKIvC0yAVP5bINYxHa6giFWTPwqmGvL6XPBKy9WX+Ihfz/vSCXdlKXjfWkBsm64zhulINbMPNumRnpMcuXipMg==
+"@cyberswap-dex/uniswap-sdk@3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@cyberswap-dex/uniswap-sdk/-/uniswap-sdk-3.0.6.tgz#8554e2f7540c5519038a2e7125e7d6d1f280a3dd"
+  integrity sha512-qmdNISMhODxHKuQ3vJIJetLMXuidsfDPnNFSGRpYnIkofM/F9p1TZQSdni7bTG/iHbrA9n+JH/y599o6Ori5SA==
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"
     jsbi "^3.1.1"
+    registry-url "^5.1.0"
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
@@ -12743,7 +12744,7 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-rc@^1.0.1, rc@^1.1.6:
+rc@^1.0.1, rc@^1.1.6, rc@^1.2.8:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
   integrity sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
@@ -13316,6 +13317,13 @@ registry-url@3.1.0:
   integrity sha1-PU74cPc93h138M+aOBQyRE4XSUI=
   dependencies:
     rc "^1.0.1"
+
+registry-url@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/registry-url/-/registry-url-5.1.0.tgz#e98334b50d5434b81136b44ec638d9c2009c5009"
+  integrity sha512-8acYXXTI0AkQv6RAOjE3vOaIXZkT9wo4LOFbBKYQEEnnMNBpKqdUrI6S4NT0KPIo/WVvJ5tE/X5LF/TQUf0ekw==
+  dependencies:
+    rc "^1.2.8"
 
 regjsgen@^0.2.0:
   version "0.2.0"
