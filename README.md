@@ -6,17 +6,17 @@
 
 An open source interface for Uniswap -- a protocol for decentralized exchange of Ethereum tokens.
 
-- Website: [levinswap.org](https://levinswap.org/)
-- Interface: [app.levinswap.org](https://app.levinswap.org)
-- Docs: [levinswap.org/docs/](https://wiki.levinswap.org/levinswap-wiki/)
-- Twitter: [@Levinswap](https://twitter.com/Levinswap)
-- Email: [contact@levinswap.org](mailto:contact@levinswap.org)
+- Website: [cyberswap.org](https://cyberswap.org/)
+- Interface: [app.cyberswap.org](https://app.cyberswap.org)
+- Docs: [cyberswap.org/docs/](https://wiki.cyberswap.org/cyberswap-wiki/)
+- Twitter: [@cyberswap](https://twitter.com/cyberswap)
+- Email: [contact@cyberswap.org](mailto:contact@cyberswap.org)
 
 ## Accessing the Uniswap Interface
 
 To access the Uniswap Interface, use an IPFS gateway link from the
 [latest release](https://github.com/Uniswap/uniswap-interface/releases/latest),
-or visit [app.levinswap.org](https://app.levinswap.org).
+or visit [app.cyberswap.org](https://app.cyberswap.org).
 
 ## Listing a token
 
@@ -47,7 +47,7 @@ To have the interface default to a different network when a wallet is not connec
 3. Change `REACT_APP_NETWORK_URL` to e.g. `"https://{YOUR_NETWORK_ID}.infura.io/v3/{YOUR_INFURA_KEY}"`
 
 Note that the interface only works on testnets where both
-[Uniswap V2](https://levinswap.org/docs/v2/smart-contracts/factory/) and
+[Uniswap V2](https://cyberswap.org/docs/v2/smart-contracts/factory/) and
 [multicall](https://github.com/makerdao/multicall) are deployed.
 The interface will not work on other networks.
 

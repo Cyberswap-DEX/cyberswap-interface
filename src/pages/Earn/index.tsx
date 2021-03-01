@@ -71,7 +71,7 @@ export default function Earn() {
               </RowBetween>{' '}
               <ExternalLink
                 style={{ color: 'white', textDecoration: 'underline' }}
-                href="https://levinswap.org/blog/uni/"
+                href="https://cyberswap.org/blog/uni/"
                 target="_blank"
               >
                 <TYPE.white fontSize={14}>Read more about UNI</TYPE.white>
@@ -97,11 +97,11 @@ export default function Earn() {
           ) : stakingInfos?.length !== 0 && stakingInfosWithBalance.length === 0 ? (
             <OutlineCard>No active pools</OutlineCard>
           ) : (
-            stakingInfosWithBalance?.map(stakingInfo => {
-              // need to sort by added liquidity here
-              return <PoolCard key={stakingInfo.stakingRewardAddress} stakingInfo={stakingInfo} />
-            })
-          )}
+                  stakingInfosWithBalance?.map(stakingInfo => {
+                    // need to sort by added liquidity here
+                    return <PoolCard key={stakingInfo.stakingRewardAddress} stakingInfo={stakingInfo} />
+                  })
+                )}
         </PoolSection>
       </AutoColumn>
     </PageWrapper>

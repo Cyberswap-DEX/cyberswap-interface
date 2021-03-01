@@ -21,7 +21,7 @@ const MEDIA_WIDTHS = {
 
 const mediaWidthTemplates: { [width in keyof typeof MEDIA_WIDTHS]: typeof css } = Object.keys(MEDIA_WIDTHS).reduce(
   (accumulator, size) => {
-    ;(accumulator as any)[size] = (a: any, b: any, c: any) => css`
+    ; (accumulator as any)[size] = (a: any, b: any, c: any) => css`
       @media (max-width: ${(MEDIA_WIDTHS as any)[size]}px) {
         ${css(a, b, c)}
       }
@@ -41,9 +41,9 @@ export function colors(darkMode: boolean): Colors {
     black,
 
     // gradient colors
-    grd1: darkMode ? '#a27395' : '#ffffff', // lower left
-    grd2: darkMode ? '#a27395' : '#fae5ec', // slightly above lower left
-    grd3: darkMode ? '#a27395' : '#fae5ec', // still lower left
+    grd1: darkMode ? '#133e7c' : '#ffffff', // lower left
+    grd2: darkMode ? '#133e7c' : '#fae5ec', // slightly above lower left
+    grd3: darkMode ? '#133e7c' : '#fae5ec', // still lower left
     grd4: darkMode ? '#2C2F36' : '#fae5ec', // middle diagonal
     grd5: darkMode ? '#5e6263' : '#fae5ec', // upper right diagonal
     grd6: darkMode ? '#2C2F36' : '#ffffff', // upper right
@@ -67,26 +67,26 @@ export function colors(darkMode: boolean): Colors {
     advancedBG: darkMode ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.6)',
 
     //primary colors
-    primary1: darkMode ? '#a27395' : '#463e53',
-    primary2: darkMode ? '#463e53' : '#463e53',
-    primary3: darkMode ? '#a27395' : '#463e53',
-    primary4: darkMode ? '#a27395' : '#463e53',
-    primary5: darkMode ? '#a27395' : '#a27395',
+    primary1: darkMode ? '#133e7c' : '#ff008d',
+    primary2: darkMode ? '#ff008d' : '#ff008d',
+    primary3: darkMode ? '#133e7c' : '#ff008d',
+    primary4: darkMode ? '#133e7c' : '#ff008d',
+    primary5: darkMode ? '#133e7c' : '#133e7c',
 
     // color text
     primaryText1: darkMode ? white : '#fff',
 
     // secondary colors
     secondary1: darkMode ? '#2172E5' : '#ff007a',
-    secondary2: darkMode ? '#17000b26' : '#a27395',
+    secondary2: darkMode ? '#17000b26' : '#133e7c',
     secondary3: darkMode ? '#17000b26' : '#FDEAF1',
 
     // other
     red1: '#FF6871',
     red2: '#F82D3A',
     green1: '#27AE60',
-    yellow1: '#a27395',
-    yellow2: '#463e53',
+    yellow1: '#133e7c',
+    yellow2: '#ff008d',
     blue1: '#2172E5'
 
     // dont wanna forget these blue yet
@@ -131,7 +131,7 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
   return <StyledComponentsThemeProvider theme={themeObject}>{children}</StyledComponentsThemeProvider>
 }
 
-const TextWrapper = styled(Text)<{ color: keyof Colors }>`
+const TextWrapper = styled(Text) <{ color: keyof Colors }>`
   color: ${({ color, theme }) => (theme as any)[color]};
 `
 

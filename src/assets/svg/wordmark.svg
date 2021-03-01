@@ -1,12 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="99" height="16" viewBox="0 0 99 16">
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="25" viewBox="0 0 168 25">
   <defs>
     <style>
       .cls-1 {
-        font-size: 15px;
-        text-anchor: middle;
-        font-family: Corbel;
+        font-size: 10.998px;
+        font-family: "Myriad Pro";
       }
     </style>
   </defs>
-  <text id="LEVINSWAP" class="cls-1" transform="translate(49.5 13.177) scale(1.175)"><tspan x="0">LEVINSWAP</tspan></text>
+  <text id="CYBERSWAP" class="cls-1" transform="translate(20.559 19.518) scale(1.865)">CYBERSWAP</text>
 </svg>

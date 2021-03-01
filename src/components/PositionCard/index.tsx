@@ -36,7 +36,7 @@ export const HoverCard = styled(Card)`
     border: 1px solid ${({ theme }) => darken(0.06, theme.bg2)};
   }
 `
-const StyledPositionCard = styled(LightCard)<{ bgColor: any }>`
+const StyledPositionCard = styled(LightCard) <{ bgColor: any }>`
   border: none;
   background: ${({ theme, bgColor }) =>
     `radial-gradient(91.85% 100% at 1.84% 0%, ${transparentize(0.8, bgColor)} 0%, ${theme.bg3} 100%) `};
@@ -69,14 +69,14 @@ export function MinimalPositionCard({ pair, showUnwrapped = false, border }: Pos
 
   const [token0Deposited, token1Deposited] =
     !!pair &&
-    !!totalPoolTokens &&
-    !!userPoolBalance &&
-    // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
-    JSBI.greaterThanOrEqual(totalPoolTokens.raw, userPoolBalance.raw)
+      !!totalPoolTokens &&
+      !!userPoolBalance &&
+      // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
+      JSBI.greaterThanOrEqual(totalPoolTokens.raw, userPoolBalance.raw)
       ? [
-          pair.getLiquidityValue(pair.token0, totalPoolTokens, userPoolBalance, false),
-          pair.getLiquidityValue(pair.token1, totalPoolTokens, userPoolBalance, false)
-        ]
+        pair.getLiquidityValue(pair.token0, totalPoolTokens, userPoolBalance, false),
+        pair.getLiquidityValue(pair.token1, totalPoolTokens, userPoolBalance, false)
+      ]
       : [undefined, undefined]
 
   return (
@@ -124,8 +124,8 @@ export function MinimalPositionCard({ pair, showUnwrapped = false, border }: Pos
                     </Text>
                   </RowFixed>
                 ) : (
-                  '-'
-                )}
+                    '-'
+                  )}
               </FixedHeightRow>
               <FixedHeightRow>
                 <Text fontSize={16} fontWeight={500}>
@@ -138,23 +138,23 @@ export function MinimalPositionCard({ pair, showUnwrapped = false, border }: Pos
                     </Text>
                   </RowFixed>
                 ) : (
-                  '-'
-                )}
+                    '-'
+                  )}
               </FixedHeightRow>
             </AutoColumn>
           </AutoColumn>
         </GreyCard>
       ) : (
-        <LightCard>
-          <TYPE.subHeader style={{ textAlign: 'center' }}>
-            <span role="img" aria-label="wizard-icon">
-              ⭐️
+          <LightCard>
+            <TYPE.subHeader style={{ textAlign: 'center' }}>
+              <span role="img" aria-label="wizard-icon">
+                ⭐️
             </span>{' '}
             By adding liquidity you&apos;ll earn 0.25% of all trades on this pair proportional to your share of the
             pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.
           </TYPE.subHeader>
-        </LightCard>
-      )}
+          </LightCard>
+        )}
     </>
   )
 }
@@ -180,14 +180,14 @@ export default function FullPositionCard({ pair, border, stakedBalance }: Positi
 
   const [token0Deposited, token1Deposited] =
     !!pair &&
-    !!totalPoolTokens &&
-    !!userPoolBalance &&
-    // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
-    JSBI.greaterThanOrEqual(totalPoolTokens.raw, userPoolBalance.raw)
+      !!totalPoolTokens &&
+      !!userPoolBalance &&
+      // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
+      JSBI.greaterThanOrEqual(totalPoolTokens.raw, userPoolBalance.raw)
       ? [
-          pair.getLiquidityValue(pair.token0, totalPoolTokens, userPoolBalance, false),
-          pair.getLiquidityValue(pair.token1, totalPoolTokens, userPoolBalance, false)
-        ]
+        pair.getLiquidityValue(pair.token0, totalPoolTokens, userPoolBalance, false),
+        pair.getLiquidityValue(pair.token1, totalPoolTokens, userPoolBalance, false)
+      ]
       : [undefined, undefined]
 
   const backgroundColor = useColor(pair?.token0)
@@ -227,11 +227,11 @@ export default function FullPositionCard({ pair, border, stakedBalance }: Positi
                   <ChevronUp size="20" style={{ marginLeft: '10px' }} />
                 </>
               ) : (
-                <>
-                  Manage
+                  <>
+                    Manage
                   <ChevronDown size="20" style={{ marginLeft: '10px' }} />
-                </>
-              )}
+                  </>
+                )}
             </ButtonEmpty>
           </RowFixed>
         </FixedHeightRow>
@@ -270,8 +270,8 @@ export default function FullPositionCard({ pair, border, stakedBalance }: Positi
                   <CurrencyLogo size="20px" style={{ marginLeft: '8px' }} currency={currency0} />
                 </RowFixed>
               ) : (
-                '-'
-              )}
+                  '-'
+                )}
             </FixedHeightRow>
 
             <FixedHeightRow>
@@ -288,8 +288,8 @@ export default function FullPositionCard({ pair, border, stakedBalance }: Positi
                   <CurrencyLogo size="20px" style={{ marginLeft: '8px' }} currency={currency1} />
                 </RowFixed>
               ) : (
-                '-'
-              )}
+                  '-'
+                )}
             </FixedHeightRow>
 
             <FixedHeightRow>
@@ -306,7 +306,7 @@ export default function FullPositionCard({ pair, border, stakedBalance }: Positi
             <ButtonSecondary padding="8px" borderRadius="8px">
               <ExternalLink
                 style={{ width: '100%', textAlign: 'center' }}
-                href={`https://info.levinswap.org/account/${account}`}
+                href={`https://info.cyberswap.org/account/${account}`}
               >
                 View accrued fees and analytics<span style={{ fontSize: '11px' }}>↗</span>
               </ExternalLink>
